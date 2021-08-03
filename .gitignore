@@ -1,0 +1,4 @@
+run/data/syncer
+run/*.json
+run/*.log
+run/*.dmlog
