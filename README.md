@@ -17,6 +17,8 @@ to the new version to test then run:
 
     ./bin/compare_vs_oracle.sh eos-2.x
 
+**Note** It's possible to specify directly the `nodeos` binary to use by overriding the environment variable `NODEOS_BIN` something like `NODEOS_BIN=/work/debug/nodeos ./bin/compare_vs_oracle.sh eos-2.x`.
+
 If there is any diff, you will be asked to check the differences using
 `diff`.
 
