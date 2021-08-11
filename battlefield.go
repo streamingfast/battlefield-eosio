@@ -13,13 +13,13 @@ import (
 
 	"github.com/dfuse-io/dfuse-eosio/codec"
 	pbcodec "github.com/dfuse-io/dfuse-eosio/pb/dfuse/eosio/codec/v1"
-	"github.com/dfuse-io/jsonpb"
 	"github.com/dfuse-io/logging"
 	"github.com/golang/protobuf/ptypes"
 	pbts "github.com/golang/protobuf/ptypes/timestamp"
 	"github.com/klauspost/compress/zstd"
 	"github.com/lithammer/dedent"
 	"github.com/manifoldco/promptui"
+	"github.com/streamingfast/jsonpb"
 	"github.com/stretchr/testify/assert"
 	"go.uber.org/zap"
 	"golang.org/x/crypto/ssh/terminal"
@@ -208,7 +208,7 @@ func sanitizeBlock(block *pbcodec.Block) *pbcodec.Block {
 		sanitizeRLimitOp(rlimitOp)
 	}
 
-	for _, trxTrace := range block.TransactionTraces {
+	for _, trxTrace := range block.UnfilteredTransactionTraces {
 		trxTrace.Elapsed = 888
 		sanitizeException(trxTrace.Exception)
 
