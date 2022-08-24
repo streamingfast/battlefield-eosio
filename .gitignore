@@ -1,4 +1,13 @@
+.DS_Store
+.envrc
+.vscode
+node_modules
+
 run/data/syncer
 run/*.json
 run/*.log
 run/*.dmlog
+
+reversible/
+state/
+snapshots/

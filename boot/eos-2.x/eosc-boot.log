@@ -1,0 +1,53 @@
+2020-12-14T13:15:37.823-0500	INFO	content/manager.go:101	Caching content.	{"ref": "../contracts/eosio.system-1.0.2.wasm"}
+2020-12-14T13:15:37.823-0500	INFO	content/manager.go:101	Caching content.	{"ref": "../contracts/eosio.token-1.0.2.wasm"}
+2020-12-14T13:15:37.823-0500	INFO	content/manager.go:101	Caching content.	{"ref": "../../battlefield/battlefield-with-handler.abi"}
+2020-12-14T13:15:37.823-0500	INFO	content/manager.go:101	Caching content.	{"ref": "../contracts/eosio.system-1.0.2.abi"}
+2020-12-14T13:15:37.823-0500	INFO	content/manager.go:101	Caching content.	{"ref": "../contracts/eosio.bios-1.0.2.wasm"}
+2020-12-14T13:15:37.823-0500	INFO	content/manager.go:101	Caching content.	{"ref": "../contracts/eosio.msig-1.0.2.abi"}
+2020-12-14T13:15:37.823-0500	INFO	content/manager.go:101	Caching content.	{"ref": "../contracts/eosio.msig-1.0.2.wasm"}
+2020-12-14T13:15:37.823-0500	INFO	content/manager.go:101	Caching content.	{"ref": "../contracts/eosio.bios-1.0.2.abi"}
+2020-12-14T13:15:37.824-0500	INFO	content/manager.go:101	Caching content.	{"ref": "../../battlefield/battlefield-without-handler.wasm"}
+2020-12-14T13:15:37.824-0500	INFO	content/manager.go:101	Caching content.	{"ref": "../../battlefield/battlefield-without-handler.abi"}
+2020-12-14T13:15:37.823-0500	INFO	content/manager.go:101	Caching content.	{"ref": "../../battlefield/battlefield-with-handler.wasm"}
+2020-12-14T13:15:37.823-0500	INFO	content/manager.go:101	Caching content.	{"ref": "../contracts/eosio.token-1.0.2.abi"}
+2020-12-14T13:15:37.825-0500	INFO	eosio-boot/keys.go:20	adding bootseq key to keybag	{"key_tag": "ephemeral", "pub_key": "EOS5MHPYyhjBjnQZejzZHqHewPWhGTfQWSVTWYEhDmJu4SXkzgweP", "priv_key": "5JpjqdhVCQTegTjrLtCSXHce7c9M8w7EXYZS7xC13jVFF4Phcrx"}
+2020-12-14T13:15:37.825-0500	INFO	eosio-boot/ping.go:11	Pinging target node at 	{"url": "http://localhost:9898"}
+2020-12-14T13:15:37.827-0500	WARN	eosio-boot/ping.go:15	target node	{"error": "http://localhost:9898/v1/chain/get_info: Post \"http://localhost:9898/v1/chain/get_info\": dial tcp 127.0.0.1:9898: connect: connection refused"}
+2020-12-14T13:15:38.835-0500	INFO	eosio-boot/boot.go:161	executing bootseq op	{"label": "Setting eosio.bios code for account eosio", "op": "system.setcode", "signer": "", "skip_validation": false}
+2020-12-14T13:15:38.836-0500	INFO	eosio-boot/boot.go:161	executing bootseq op	{"label": "Create account eosio2", "op": "system.newaccount", "signer": "", "skip_validation": false}
+2020-12-14T13:15:38.836-0500	INFO	eosio-boot/boot.go:161	executing bootseq op	{"label": "Create account eosio3", "op": "system.newaccount", "signer": "", "skip_validation": false}
+2020-12-14T13:15:38.836-0500	INFO	eosio-boot/boot.go:161	executing bootseq op	{"label": "Create account eosio.msig (on-chain multi-signature helper)", "op": "system.newaccount", "signer": "", "skip_validation": false}
+2020-12-14T13:15:38.836-0500	INFO	eosio-boot/boot.go:161	executing bootseq op	{"label": "Create account eosio.token (main multi-currency contract, including EOS)", "op": "system.newaccount", "signer": "", "skip_validation": false}
+2020-12-14T13:15:38.836-0500	INFO	eosio-boot/boot.go:161	executing bootseq op	{"label": "Create account eosio.ram (where buyram proceeds go)", "op": "system.newaccount", "signer": "", "skip_validation": false}
+2020-12-14T13:15:38.836-0500	INFO	eosio-boot/boot.go:161	executing bootseq op	{"label": "Create account eosio.ramfee (where buyram fees go)", "op": "system.newaccount", "signer": "", "skip_validation": false}
+2020-12-14T13:15:38.836-0500	INFO	eosio-boot/boot.go:161	executing bootseq op	{"label": "Create account eosio.names (where bidname revenues go)", "op": "system.newaccount", "signer": "", "skip_validation": false}
+2020-12-14T13:15:38.836-0500	INFO	eosio-boot/boot.go:161	executing bootseq op	{"label": "Create account eosio.stake (where delegated stakes go)", "op": "system.newaccount", "signer": "", "skip_validation": false}
+2020-12-14T13:15:38.836-0500	INFO	eosio-boot/boot.go:161	executing bootseq op	{"label": "Create account eosio.saving (unallocated inflation)", "op": "system.newaccount", "signer": "", "skip_validation": false}
+2020-12-14T13:15:38.836-0500	INFO	eosio-boot/boot.go:161	executing bootseq op	{"label": "Create account eosio.bpay (fund per-block bucket)", "op": "system.newaccount", "signer": "", "skip_validation": false}
+2020-12-14T13:15:38.836-0500	INFO	eosio-boot/boot.go:161	executing bootseq op	{"label": "Create account eosio.vpay (fund per-vote bucket)", "op": "system.newaccount", "signer": "", "skip_validation": false}
+2020-12-14T13:15:38.836-0500	INFO	eosio-boot/boot.go:161	executing bootseq op	{"label": "Setting privileged account for eosio.msig", "op": "system.setpriv", "signer": "", "skip_validation": false}
+2020-12-14T13:15:38.836-0500	INFO	eosio-boot/boot.go:161	executing bootseq op	{"label": "Setting eosio.msig code for account eosio.msig", "op": "system.setcode", "signer": "", "skip_validation": false}
+2020-12-14T13:15:38.836-0500	INFO	eosio-boot/boot.go:161	executing bootseq op	{"label": "Setting eosio.token code for account eosio.token", "op": "system.setcode", "signer": "", "skip_validation": false}
+2020-12-14T13:15:38.837-0500	INFO	eosio-boot/boot.go:161	executing bootseq op	{"label": "Creating the EOS currency symbol", "op": "token.create", "signer": "", "skip_validation": false}
+2020-12-14T13:15:38.837-0500	INFO	eosio-boot/boot.go:161	executing bootseq op	{"label": "Issuing initial EOS monetary base", "op": "token.issue", "signer": "", "skip_validation": false}
+2020-12-14T13:15:38.837-0500	INFO	eosio-boot/boot.go:161	executing bootseq op	{"label": "Create account ultra (Ultra system account)", "op": "system.newaccount", "signer": "", "skip_validation": false}
+2020-12-14T13:15:38.837-0500	INFO	eosio-boot/boot.go:161	executing bootseq op	{"label": "Create account battlefield1", "op": "system.newaccount", "signer": "", "skip_validation": false}
+2020-12-14T13:15:38.837-0500	INFO	eosio-boot/boot.go:161	executing bootseq op	{"label": "Create account battlefield3", "op": "system.newaccount", "signer": "", "skip_validation": false}
+2020-12-14T13:15:38.837-0500	INFO	eosio-boot/boot.go:161	executing bootseq op	{"label": "Create account battlefield4", "op": "system.newaccount", "signer": "", "skip_validation": false}
+2020-12-14T13:15:38.837-0500	INFO	eosio-boot/boot.go:161	executing bootseq op	{"label": "Create account battlefield5", "op": "system.newaccount", "signer": "", "skip_validation": false}
+2020-12-14T13:15:38.837-0500	INFO	eosio-boot/boot.go:161	executing bootseq op	{"label": "Create account battlefield6", "op": "system.newaccount", "signer": "", "skip_validation": false}
+2020-12-14T13:15:38.837-0500	INFO	eosio-boot/boot.go:161	executing bootseq op	{"label": "Create account notified1", "op": "system.newaccount", "signer": "", "skip_validation": false}
+2020-12-14T13:15:38.837-0500	INFO	eosio-boot/boot.go:161	executing bootseq op	{"label": "Create account notified2", "op": "system.newaccount", "signer": "", "skip_validation": false}
+2020-12-14T13:15:38.837-0500	INFO	eosio-boot/boot.go:161	executing bootseq op	{"label": "Create account notified3", "op": "system.newaccount", "signer": "", "skip_validation": false}
+2020-12-14T13:15:38.837-0500	INFO	eosio-boot/boot.go:161	executing bootseq op	{"label": "Create account notified4", "op": "system.newaccount", "signer": "", "skip_validation": false}
+2020-12-14T13:15:38.837-0500	INFO	eosio-boot/boot.go:161	executing bootseq op	{"label": "Create account notified5", "op": "system.newaccount", "signer": "", "skip_validation": false}
+2020-12-14T13:15:38.837-0500	INFO	eosio-boot/boot.go:161	executing bootseq op	{"label": "Setting battlefield (without `onerorr` handler) code for account battlefield1", "op": "system.setcode", "signer": "", "skip_validation": false}
+2020-12-14T13:15:38.837-0500	INFO	eosio-boot/boot.go:161	executing bootseq op	{"label": "Setting battlefield (with `onerror` handler) code for account battlefield3", "op": "system.setcode", "signer": "", "skip_validation": false}
+2020-12-14T13:15:38.838-0500	INFO	eosio-boot/boot.go:161	executing bootseq op	{"label": "Setting battlefield code for account notified2", "op": "system.setcode", "signer": "", "skip_validation": false}
+2020-12-14T13:15:38.838-0500	INFO	eosio-boot/boot.go:161	executing bootseq op	{"label": "Create zzzzzzzzzzzz account", "op": "system.newaccount", "signer": "", "skip_validation": false}
+2020-12-14T13:15:38.839-0500	INFO	eosio-boot/boot.go:161	executing bootseq op	{"label": "Replacing eosio account from eosio.bios contract to eosio.system", "op": "system.setcode", "signer": "", "skip_validation": false}
+2020-12-14T13:15:38.840-0500	INFO	eosio-boot/boot.go:161	executing bootseq op	{"label": "Disabling authorization for system accounts, pointing `eosio` to the `eosio.prods` account.", "op": "system.resign_accounts", "signer": "", "skip_validation": false}
+2020-12-14T13:15:39.225-0500	INFO	eosio-boot/boot.go:231	waiting 2 seconds for transactions to flush to blocks
+2020-12-14T13:15:41.232-0500	INFO	eosio-boot/validation.go:80	
+2020-12-14T13:15:41.232-0500	INFO	eosio-boot/validation.go:81	All good! Chain validation succeeded!
+2020-12-14T13:15:41.232-0500	INFO	eosio-boot/validation.go:82	

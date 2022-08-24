@@ -1,0 +1,9 @@
+threshold: 1
+keys:
+- key: EOS5MHPYyhjBjnQZejzZHqHewPWhGTfQWSVTWYEhDmJu4SXkzgweP
+  weight: 1
+accounts:
+- permission:
+    actor: notified2
+    permission: eosio.code
+  weight: 1

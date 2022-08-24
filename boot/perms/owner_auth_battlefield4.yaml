@@ -1,0 +1,31 @@
+threshold: 5
+accounts:
+- permission:
+    actor: battlefield1
+    permission: active
+  weight: 2
+- permission:
+    actor: battlefield2
+    permission: active
+  weight: 2
+- permission:
+    actor: battlefield3
+    permission: active
+  weight: 2
+- permission:
+    actor: battlefield5
+    permission: active
+  weight: 2
+- permission:
+    actor: battlefield6
+    permission: active
+  weight: 2
+- permission:
+    actor: battlefield7
+    permission: active
+  weight: 1
+waits:
+- wait_sec: 86400  # 1 day  = 86400  sec = (24h * 3600s)
+  weight: 1
+- wait_sec: 604800 # 1 week = 604800 sec = (7d * 24h * 3600s)
+  weight: 2

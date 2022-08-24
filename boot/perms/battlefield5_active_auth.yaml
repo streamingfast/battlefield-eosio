@@ -1,0 +1,21 @@
+threshold: 5
+accounts:
+- permission:
+    actor: battlefield1
+    permission: active
+  weight: 2
+- permission:
+    actor: battlefield3
+    permission: active
+  weight: 2
+- permission:
+    actor: battlefield4
+    permission: active
+  weight: 2
+- permission:
+    actor: zzzzzzzzzzzz
+    permission: active
+  weight: 1
+waits:
+- wait_sec: 10800
+  weight: 1

@@ -1,0 +1,262 @@
+keys:
+  ephemeral: 5JpjqdhVCQTegTjrLtCSXHce7c9M8w7EXYZS7xC13jVFF4Phcrx   #  EOS5MHPYyhjBjnQZejzZHqHewPWhGTfQWSVTWYEhDmJu4SXkzgweP
+
+## **Important** All resources are reference from one of the "target" folder, like `eos-2.x` for example!
+contents:
+  - name: eosio.bios.abi
+    url: ../contracts/eosio.bios-1.0.2.abi
+  - name: eosio.bios.wasm
+    url: ../contracts/eosio.bios-1.0.2.wasm
+
+  - name: eosio.system.abi
+    url: ../contracts/eosio.system-1.0.2.abi
+  - name: eosio.system.wasm
+    url: ../contracts/eosio.system-1.0.2.wasm
+
+  - name: eosio.msig.abi
+    url: ../contracts/eosio.msig-1.0.2.abi
+  - name: eosio.msig.wasm
+    url: ../contracts/eosio.msig-1.0.2.wasm
+
+  - name: eosio.token.abi
+    url: ../contracts/eosio.token-1.0.2.abi
+  - name: eosio.token.wasm
+    url: ../contracts/eosio.token-1.0.2.wasm
+
+## Custom contracts
+  - name: battlefield-with-handler.wasm
+    url: ../../battlefield/battlefield-with-handler.wasm
+  - name: battlefield-with-handler.abi
+    url: ../../battlefield/battlefield-with-handler.abi
+
+  - name: battlefield-without-handler.wasm
+    url: ../../battlefield/battlefield-without-handler.wasm
+  - name: battlefield-without-handler.abi
+    url: ../../battlefield/battlefield-without-handler.abi
+
+################################# BOOT SEQUENCE ###################################
+boot_sequence:
+- op: system.setcode
+  label: Setting eosio.bios code for account eosio
+  data:
+    account: eosio
+    contract_name_ref: eosio.bios
+
+- op: system.newaccount
+  label: Create account eosio2
+  data:
+    creator: eosio
+    new_account: eosio2
+    pubkey: ephemeral
+- op: system.newaccount
+  label: Create account eosio3
+  data:
+    creator: eosio
+    new_account: eosio3
+    pubkey: ephemeral
+
+- op: system.newaccount
+  label: Create account eosio.msig (on-chain multi-signature helper)
+  data:
+    creator: eosio
+    new_account: eosio.msig
+    pubkey: ephemeral
+- op: system.newaccount
+  label: Create account eosio.token (main multi-currency contract, including EOS)
+  data:
+    creator: eosio
+    new_account: eosio.token
+    pubkey: ephemeral
+- op: system.newaccount
+  label: Create account eosio.ram (where buyram proceeds go)
+  data:
+    creator: eosio
+    new_account: eosio.ram
+    pubkey: ephemeral
+- op: system.newaccount
+  label: Create account eosio.ramfee (where buyram fees go)
+  data:
+    creator: eosio
+    new_account: eosio.ramfee
+    pubkey: ephemeral
+- op: system.newaccount
+  label: Create account eosio.names (where bidname revenues go)
+  data:
+    creator: eosio
+    new_account: eosio.names
+    pubkey: ephemeral
+- op: system.newaccount
+  label: Create account eosio.stake (where delegated stakes go)
+  data:
+    creator: eosio
+    new_account: eosio.stake
+    pubkey: ephemeral
+- op: system.newaccount
+  label: Create account eosio.saving (unallocated inflation)
+  data:
+    creator: eosio
+    new_account: eosio.saving
+    pubkey: ephemeral
+- op: system.newaccount
+  label: Create account eosio.bpay (fund per-block bucket)
+  data:
+    creator: eosio
+    new_account: eosio.bpay
+    pubkey: ephemeral
+- op: system.newaccount
+  label: Create account eosio.vpay (fund per-vote bucket)
+  data:
+    creator: eosio
+    new_account: eosio.vpay
+    pubkey: ephemeral
+- op: system.setpriv
+  label: Setting privileged account for eosio.msig
+  data:
+    account: eosio.msig
+- op: system.setcode
+  label: Setting eosio.msig code for account eosio.msig
+  data:
+    account: eosio.msig
+    contract_name_ref: eosio.msig
+- op: system.setcode
+  label: Setting eosio.token code for account eosio.token
+  data:
+    account: eosio.token
+    contract_name_ref: eosio.token
+- op: token.create
+  label: Creating the EOS currency symbol
+  data:
+    account: eosio
+    amount: 10000000000.0000 EOS  # Should work with 5% inflation, for the next 50 years (end of uint32 block_num anyway)
+- op: token.issue
+  label: Issuing initial EOS monetary base
+  data:
+    account: eosio
+    amount: 1000011821.0000 EOS  # 1B coins, as per distribution model + gift of RAM to new users.
+    memo: "Creation of EOS. Credits and Acknowledgments: eosacknowledgments.io"
+
+### Battlefield setup
+
+- op: system.newaccount
+  label: Create account battlefield1
+  data:
+    creator: eosio
+    new_account: battlefield1
+    pubkey: ephemeral
+
+# Account battlefield2 is created manually to test our newaccount instrumentation
+
+- op: system.newaccount
+  label: Create account battlefield3
+  data:
+    creator: eosio
+    new_account: battlefield3
+    pubkey: ephemeral
+
+- op: system.newaccount
+  label: Create account battlefield4
+  data:
+    creator: eosio
+    new_account: battlefield4
+    pubkey: ephemeral
+
+- op: system.newaccount
+  label: Create account battlefield5
+  data:
+    creator: eosio
+    new_account: battlefield5
+    pubkey: ephemeral
+
+- op: system.newaccount
+  label: Create account battlefield6
+  data:
+    creator: eosio
+    new_account: battlefield6
+    pubkey: ephemeral
+
+- op: system.newaccount
+  label: Create account notified1
+  data:
+    creator: eosio
+    new_account: notified1
+    pubkey: ephemeral
+
+- op: system.newaccount
+  label: Create account notified2
+  data:
+    creator: eosio
+    new_account: notified2
+    pubkey: ephemeral
+
+- op: system.newaccount
+  label: Create account notified3
+  data:
+    creator: eosio
+    new_account: notified3
+    pubkey: ephemeral
+
+- op: system.newaccount
+  label: Create account notified4
+  data:
+    creator: eosio
+    new_account: notified4
+    pubkey: ephemeral
+
+- op: system.newaccount
+  label: Create account notified5
+  data:
+    creator: eosio
+    new_account: notified5
+    pubkey: ephemeral
+
+# Account battlefield1 has no onerror handler (notification when a deferred failed)
+- op: system.setcode
+  label: Setting battlefield (without `onerorr` handler) code for account battlefield1
+  data:
+    account: battlefield1
+    contract_name_ref: battlefield-without-handler
+
+# Account battlefield2 is managed inside `run.sh` directly
+
+# Account battlefield3 has onerror handler (notification when a deferred failed)
+- op: system.setcode
+  label: Setting battlefield (with `onerror` handler) code for account battlefield3
+  data:
+    account: battlefield3
+    contract_name_ref: battlefield-with-handler
+
+- op: system.setcode
+  label: Setting battlefield code for account notified2
+  data:
+    account: notified2
+    contract_name_ref: battlefield-without-handler
+
+- op: system.newaccount
+  label: Create zzzzzzzzzzzz account
+  data:
+    creator: eosio
+    new_account: zzzzzzzzzzzz
+    pubkey: ephemeral
+
+### End boot
+
+- op: system.setcode
+  label: Replacing eosio account from eosio.bios contract to eosio.system
+  data:
+    account: eosio
+    contract_name_ref: eosio.system
+
+- op: system.resign_accounts
+  label: Disabling authorization for system accounts, pointing `eosio` to the `eosio.prods` account.
+  data:
+    accounts:
+    #- eosio
+    - eosio.msig
+    - eosio.token
+    - eosio.ram
+    - eosio.ramfee
+    - eosio.stake
+    - eosio.names
+    - eosio.saving
+    - eosio.bpay
+    - eosio.vpay

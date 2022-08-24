@@ -1,0 +1,117 @@
+APPBASE: Warning: The following configuration items in the config.ini file are redundantly set to
+         their default value:
+             sync-fetch-span, max-irreversible-block-age
+         Explicit values will override future changes to application defaults. Consider commenting out or
+         removing these items.
+info  2020-12-14T18:15:37.715 thread-0  chain_plugin.cpp:636          plugin_initialize    ] initializing chain plugin
+info  2020-12-14T18:15:37.717 thread-0  chain_plugin.cpp:467          operator()           ] Support for builtin protocol feature 'PREACTIVATE_FEATURE' (with digest of '0ec7e080177b2c02b278d5088611686b49d739925a92d9bfcacd7fc6b74053bd') is enabled without activation restrictions
+info  2020-12-14T18:15:37.717 thread-0  chain_plugin.cpp:454          operator()           ] Support for builtin protocol feature 'ONLY_LINK_TO_EXISTING_PERMISSION' (with digest of '1a99a59d87e06e09ec5b028a9cbb7749b4a5ad8819004365d02dc4379a8b7241') is enabled with preactivation required
+info  2020-12-14T18:15:37.717 thread-0  chain_plugin.cpp:454          operator()           ] Support for builtin protocol feature 'FORWARD_SETCODE' (with digest of '2652f5f96006294109b3dd0bbde63693f55324af452b799ee137a81a905eed25') is enabled with preactivation required
+info  2020-12-14T18:15:37.717 thread-0  chain_plugin.cpp:454          operator()           ] Support for builtin protocol feature 'WTMSIG_BLOCK_SIGNATURES' (with digest of '299dcb6af692324b899b39f16d5a530a33062804e41f09dc97e9f156b4476707') is enabled with preactivation required
+info  2020-12-14T18:15:37.717 thread-0  chain_plugin.cpp:454          operator()           ] Support for builtin protocol feature 'REPLACE_DEFERRED' (with digest of 'ef43112c6543b88db2283a2e077278c315ae2c84719a8b25f25cc88565fbea99') is enabled with preactivation required
+info  2020-12-14T18:15:37.717 thread-0  chain_plugin.cpp:454          operator()           ] Support for builtin protocol feature 'NO_DUPLICATE_DEFERRED_ID' (with digest of '4a90c00d55454dc5b059055ca213579c6ea856967712a56017487886a4d4cc0f') is enabled with preactivation required
+info  2020-12-14T18:15:37.717 thread-0  chain_plugin.cpp:454          operator()           ] Support for builtin protocol feature 'RAM_RESTRICTIONS' (with digest of '4e7bf348da00a945489b2a681749eb56f5de00b900014e137ddae39f48f69d67') is enabled with preactivation required
+info  2020-12-14T18:15:37.717 thread-0  chain_plugin.cpp:454          operator()           ] Support for builtin protocol feature 'WEBAUTHN_KEY' (with digest of '4fca8bd82bbd181e714e283f83e1b45d95ca5af40fb89ad3977b653c448f78c2') is enabled with preactivation required
+info  2020-12-14T18:15:37.717 thread-0  chain_plugin.cpp:454          operator()           ] Support for builtin protocol feature 'DISALLOW_EMPTY_PRODUCER_SCHEDULE' (with digest of '68dcaa34c0517d19666e6b33add67351d8c5f69e999ca1e37931bc410a297428') is enabled with preactivation required
+info  2020-12-14T18:15:37.717 thread-0  chain_plugin.cpp:454          operator()           ] Support for builtin protocol feature 'ONLY_BILL_FIRST_AUTHORIZER' (with digest of '8ba52fe7a3956c5cd3a656a3174b931d3bb2abb45578befc59f283ecd816a405') is enabled with preactivation required
+info  2020-12-14T18:15:37.717 thread-0  chain_plugin.cpp:454          operator()           ] Support for builtin protocol feature 'RESTRICT_ACTION_TO_SELF' (with digest of 'ad9e3d8f650687709fd68f4b90b41f7d825a365b02c23a636cef88ac2ac00c43') is enabled with preactivation required
+info  2020-12-14T18:15:37.717 thread-0  chain_plugin.cpp:454          operator()           ] Support for builtin protocol feature 'FIX_LINKAUTH_RESTRICTION' (with digest of 'e0fb64b1085cc5538970158d05a009c24e276fb94e1a0bf6a528b48fbc4ff526') is enabled with preactivation required
+info  2020-12-14T18:15:37.717 thread-0  chain_plugin.cpp:454          operator()           ] Support for builtin protocol feature 'GET_SENDER' (with digest of 'f0af56d2c5a48d60a4a5b5c903edfb7db3a736a94ed589d0b797df33ff9d3e1d') is enabled with preactivation required
+info  2020-12-14T18:15:37.718 thread-0  chain_plugin.cpp:985          plugin_initialize    ] Using genesis state provided in '/Users/maoueh/work/dfuse/nodeos-cloudbuild/deep-mind/boot/eos-2.x/genesis.json'
+info  2020-12-14T18:15:37.718 thread-0  chain_plugin.cpp:1016         plugin_initialize    ] Starting fresh blockchain state using provided genesis state.
+info  2020-12-14T18:15:38.177 thread-0  platform_timer_accurac:62     compute_and_print_ti ] Checktime timer accuracy: min:0us max:88us mean:25us stddev:19us
+info  2020-12-14T18:15:38.178 thread-0  http_plugin.cpp:742           plugin_initialize    ] configured http to listen on 0.0.0.0:9898
+warn  2020-12-14T18:15:38.178 thread-0  net_api_plugin.cpp:91         plugin_initialize    ] 
+**********SECURITY WARNING**********
+*                                  *
+* --         Net API            -- *
+* - EXPOSED to the LOCAL NETWORK - *
+* - USE ONLY ON SECURE NETWORKS! - *
+*                                  *
+************************************
+
+warn  2020-12-14T18:15:38.178 thread-0  producer_api_plugin.cp:141    plugin_initialize    ] 
+**********SECURITY WARNING**********
+*                                  *
+* --        Producer API        -- *
+* - EXPOSED to the LOCAL NETWORK - *
+* - USE ONLY ON SECURE NETWORKS! - *
+*                                  *
+************************************
+
+info  2020-12-14T18:15:38.178 thread-0  main.cpp:138                  main                 ] nodeos version v2.0.8-dm.12.0 v2.0.8-dm.12.0-7e8f16d6a22a66199466c681dc6d74330d33ab62
+info  2020-12-14T18:15:38.178 thread-0  main.cpp:139                  main                 ] nodeos using configuration file /Users/maoueh/work/dfuse/nodeos-cloudbuild/deep-mind/boot/eos-2.x/config.ini
+info  2020-12-14T18:15:38.178 thread-0  main.cpp:140                  main                 ] nodeos data directory is /Users/maoueh/work/dfuse/nodeos-cloudbuild/deep-mind/boot/eos-2.x
+warn  2020-12-14T18:15:38.178 thread-0  controller.cpp:583            startup              ] No existing chain state or fork database. Initializing fresh blockchain state and resetting fork database.
+warn  2020-12-14T18:15:38.178 thread-0  controller.cpp:452            initialize_blockchai ] Initializing new blockchain with genesis state
+info  2020-12-14T18:15:38.207 thread-0  chain_plugin.cpp:1229         plugin_startup       ] starting chain in read/write mode
+info  2020-12-14T18:15:38.207 thread-0  chain_plugin.cpp:1234         plugin_startup       ] Blockchain started; head block is #1, genesis timestamp is 2018-07-23T17:14:45.000
+info  2020-12-14T18:15:38.207 thread-0  net_plugin.cpp:3413           plugin_startup       ] my node_id is 05ff6b80a54f7a41b1c27f456ed197ebcabfddab99dfe0f8ffe61e8185ac82a9
+info  2020-12-14T18:15:38.207 thread-0  net_plugin.cpp:3469           plugin_startup       ] starting listener, max clients is 25
+info  2020-12-14T18:15:38.207 thread-0  net_api_plugin.cpp:59         plugin_startup       ] starting net_api_plugin
+info  2020-12-14T18:15:38.207 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/net/connect
+info  2020-12-14T18:15:38.207 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/net/connections
+info  2020-12-14T18:15:38.207 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/net/disconnect
+info  2020-12-14T18:15:38.207 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/net/status
+info  2020-12-14T18:15:38.207 thread-0  chain_api_plugin.cpp:105      plugin_startup       ] starting chain_api_plugin
+info  2020-12-14T18:15:38.207 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/chain/get_info
+info  2020-12-14T18:15:38.207 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/chain/abi_bin_to_json
+info  2020-12-14T18:15:38.207 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/chain/abi_json_to_bin
+info  2020-12-14T18:15:38.207 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/chain/get_abi
+info  2020-12-14T18:15:38.207 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/chain/get_account
+info  2020-12-14T18:15:38.207 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/chain/get_activated_protocol_features
+info  2020-12-14T18:15:38.207 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/chain/get_block
+info  2020-12-14T18:15:38.207 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/chain/get_block_header_state
+info  2020-12-14T18:15:38.207 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/chain/get_code
+info  2020-12-14T18:15:38.207 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/chain/get_code_hash
+info  2020-12-14T18:15:38.207 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/chain/get_currency_balance
+info  2020-12-14T18:15:38.208 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/chain/get_currency_stats
+info  2020-12-14T18:15:38.208 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/chain/get_producer_schedule
+info  2020-12-14T18:15:38.208 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/chain/get_producers
+info  2020-12-14T18:15:38.208 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/chain/get_raw_abi
+info  2020-12-14T18:15:38.208 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/chain/get_raw_code_and_abi
+info  2020-12-14T18:15:38.208 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/chain/get_required_keys
+info  2020-12-14T18:15:38.208 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/chain/get_scheduled_transactions
+info  2020-12-14T18:15:38.208 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/chain/get_table_by_scope
+info  2020-12-14T18:15:38.208 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/chain/get_table_rows
+info  2020-12-14T18:15:38.208 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/chain/get_transaction_id
+info  2020-12-14T18:15:38.208 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/chain/push_block
+info  2020-12-14T18:15:38.208 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/chain/push_transaction
+info  2020-12-14T18:15:38.208 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/chain/push_transactions
+info  2020-12-14T18:15:38.208 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/chain/send_transaction
+info  2020-12-14T18:15:38.208 thread-0  producer_plugin.cpp:978       plugin_startup       ] producer plugin:  plugin_startup() begin
+info  2020-12-14T18:15:38.208 thread-0  producer_plugin.cpp:1003      plugin_startup       ] Launching block production for 3 producers at 2020-12-14T18:15:38.208.
+info  2020-12-14T18:15:38.208 thread-0  producer_plugin.cpp:1014      plugin_startup       ] producer plugin:  plugin_startup() end
+info  2020-12-14T18:15:38.208 thread-0  producer_api_plugin.cp:89     plugin_startup       ] starting producer_api_plugin
+info  2020-12-14T18:15:38.208 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/producer/add_greylist_accounts
+info  2020-12-14T18:15:38.208 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/producer/create_snapshot
+info  2020-12-14T18:15:38.208 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/producer/get_account_ram_corrections
+info  2020-12-14T18:15:38.208 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/producer/get_greylist
+info  2020-12-14T18:15:38.208 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/producer/get_integrity_hash
+info  2020-12-14T18:15:38.208 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/producer/get_runtime_options
+info  2020-12-14T18:15:38.209 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/producer/get_scheduled_protocol_feature_activations
+info  2020-12-14T18:15:38.209 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/producer/get_supported_protocol_features
+info  2020-12-14T18:15:38.209 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/producer/get_whitelist_blacklist
+info  2020-12-14T18:15:38.209 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/producer/pause
+info  2020-12-14T18:15:38.209 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/producer/paused
+info  2020-12-14T18:15:38.209 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/producer/remove_greylist_accounts
+info  2020-12-14T18:15:38.209 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/producer/resume
+info  2020-12-14T18:15:38.209 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/producer/schedule_protocol_feature_activations
+info  2020-12-14T18:15:38.209 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/producer/set_whitelist_blacklist
+info  2020-12-14T18:15:38.209 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/producer/update_runtime_options
+info  2020-12-14T18:15:38.209 thread-0  http_plugin.cpp:821           operator()           ] start listening for http requests
+info  2020-12-14T18:15:38.209 thread-0  http_plugin.cpp:927           add_handler          ] add api url: /v1/node/get_supported_apis
+info  2020-12-14T18:15:38.400 thread-0  producer_plugin.cpp:2145      produce_block        ] Produced block b064a0db3b83c8ec... #2 @ 2020-12-14T18:15:38.500 signed by eosio [trxs: 0, lib: 1, confirmed: 0]
+info  2020-12-14T18:15:38.900 thread-0  producer_plugin.cpp:2145      produce_block        ] Produced block 03b102c46740f048... #3 @ 2020-12-14T18:15:39.000 signed by eosio [trxs: 14, lib: 2, confirmed: 0]
+info  2020-12-14T18:15:39.404 thread-0  producer_plugin.cpp:2145      produce_block        ] Produced block ccce39e930971d48... #4 @ 2020-12-14T18:15:39.500 signed by eosio [trxs: 20, lib: 3, confirmed: 0]
+info  2020-12-14T18:15:39.904 thread-0  producer_plugin.cpp:2145      produce_block        ] Produced block e33ebf9607bf8fce... #5 @ 2020-12-14T18:15:40.000 signed by eosio [trxs: 0, lib: 4, confirmed: 0]
+info  2020-12-14T18:15:40.402 thread-0  producer_plugin.cpp:2145      produce_block        ] Produced block 6425a069dd335361... #6 @ 2020-12-14T18:15:40.500 signed by eosio [trxs: 0, lib: 5, confirmed: 0]
+info  2020-12-14T18:15:40.900 thread-0  producer_plugin.cpp:2145      produce_block        ] Produced block bacccacb69fb82a1... #7 @ 2020-12-14T18:15:41.000 signed by eosio [trxs: 0, lib: 6, confirmed: 0]
+info  2020-12-14T18:15:41.301 thread-0  producer_plugin.cpp:2145      produce_block        ] Produced block 7277fe59a6e4df3c... #8 @ 2020-12-14T18:15:41.500 signed by eosio [trxs: 0, lib: 7, confirmed: 0]
+error 2020-12-14T18:15:41.500 thread-0  http_plugin.cpp:964           handle_exception     ] FC Exception encountered while processing chain.push_transaction
+info  2020-12-14T18:15:41.507 thread-0  net_plugin.cpp:3515           plugin_shutdown      ] shutdown..
+info  2020-12-14T18:15:41.507 thread-0  net_plugin.cpp:3532           plugin_shutdown      ] close 0 connections
+info  2020-12-14T18:15:41.507 thread-0  net_plugin.cpp:3552           plugin_shutdown      ] exit shutdown
+info  2020-12-14T18:15:41.507 thread-0  chain_plugin.cpp:1258         plugin_shutdown      ] chain shutdown
+info  2020-12-14T18:15:41.516 thread-0  chain_plugin.cpp:1268         plugin_shutdown      ] chain done
+info  2020-12-14T18:15:41.516 thread-0  main.cpp:181                  main                 ] nodeos successfully exiting

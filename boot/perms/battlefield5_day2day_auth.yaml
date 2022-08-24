@@ -1,0 +1,14 @@
+threshold: 1
+accounts:
+- permission:
+    actor: battlefield1
+    permission: active
+  weight: 1
+- permission:
+    actor: battlefield3
+    permission: active
+  weight: 1
+- permission:
+    actor: battlefield4
+    permission: active
+  weight: 1
