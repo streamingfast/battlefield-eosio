@@ -14,5 +14,3 @@ require (
 )
 
 go 1.13
-
-replace github.com/dfuse-io/dfuse-eosio => /Users/maoueh/work/sf/sf-eosio
