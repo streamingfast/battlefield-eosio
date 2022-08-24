@@ -1,0 +1,266 @@
+Downloading content from "../../battlefield/battlefield-with-handler.abi".
+Downloading content from "../contracts/eosio.msig-1.0.2.abi".
+Downloading content from "../../battlefield/battlefield-with-handler.wasm".
+Downloading content from "../contracts/eosio.token-1.0.2.abi".
+Downloading content from "../contracts/eosio.bios-1.0.2.abi".
+Downloading content from "../contracts/eosio.msig-1.0.2.wasm".
+Downloading content from "../contracts/eosio.system-1.0.2.abi".
+Downloading content from "../contracts/eosio.token-1.0.2.wasm".
+Downloading content from "../contracts/eosio.bios-1.0.2.wasm".
+Downloading content from "../contracts/eosio.system-1.0.2.wasm".
+Caching content from "../contracts/eosio.msig-1.0.2.abi".
+Caching content from "../../battlefield/battlefield-with-handler.wasm".
+Caching content from "../../battlefield/battlefield-with-handler.abi".
+Caching content from "../contracts/eosio.token-1.0.2.abi".
+Caching content from "../contracts/eosio.msig-1.0.2.wasm".
+Caching content from "../contracts/eosio.bios-1.0.2.abi".
+Caching content from "../contracts/eosio.bios-1.0.2.wasm".
+Caching content from "../contracts/eosio.token-1.0.2.wasm".
+Caching content from "../contracts/eosio.system-1.0.2.abi".
+Caching content from "../contracts/eosio.system-1.0.2.wasm".
+- "../../battlefield/battlefield-with-handler.wasm" done
+- "../contracts/eosio.token-1.0.2.abi" done
+Downloading content from "../../battlefield/battlefield-without-handler.wasm".
+- "../contracts/eosio.msig-1.0.2.wasm" done
+Downloading content from "../../battlefield/battlefield-without-handler.abi".
+- "../contracts/eosio.bios-1.0.2.abi" done
+- "../contracts/eosio.system-1.0.2.abi" done
+- "../../battlefield/battlefield-with-handler.abi" done
+- "../contracts/eosio.msig-1.0.2.abi" done
+- "../contracts/eosio.token-1.0.2.wasm" done
+- "../contracts/eosio.bios-1.0.2.wasm" done
+- "../contracts/eosio.system-1.0.2.wasm" done
+Caching content from "../../battlefield/battlefield-without-handler.abi".
+Caching content from "../../battlefield/battlefield-without-handler.wasm".
+- "../../battlefield/battlefield-without-handler.abi" done
+- "../../battlefield/battlefield-without-handler.wasm" done
+START BOOT SEQUENCE...
+Using preset key:
+
+	Public key: EOS5MHPYyhjBjnQZejzZHqHewPWhGTfQWSVTWYEhDmJu4SXkzgweP
+	Private key: 5Jpj..hcrx
+
+Not writing actions to 'actions.jsonl'. Activate with --write-actions
+---- BEGIN HOOK "boot" ----
+---- END HOOK "boot" ----
+Pinging target node at "http://localhost:9898"...
+target node error: http://localhost:9898/v1/chain/get_info: Post http://localhost:9898/v1/chain/get_info: dial tcp [::1]:9898: connect: connection refused
+e
+ touchdown!
+In-memory keys:
+- EOS5MHPYyhjBjnQZejzZHqHewPWhGTfQWSVTWYEhDmJu4SXkzgweP
+- EOS5MHPYyhjBjnQZejzZHqHewPWhGTfQWSVTWYEhDmJu4SXkzgweP
+
+Setting eosio.bios code for account eosio  [system.setcode] 
+.
+ done
+Create account eosio2  [system.newaccount] 
+.
+ done
+Create account eosio3  [system.newaccount] 
+.
+ done
+Create account eosio.msig (on-chain multi-signature helper)  [system.newaccount] 
+.
+ done
+Create account eosio.token (main multi-currency contract, including EOS)  [system.newaccount] 
+.
+ done
+Create account eosio.ram (where buyram proceeds go)  [system.newaccount] 
+.
+ done
+Create account eosio.ramfee (where buyram fees go)  [system.newaccount] 
+.
+ done
+Create account eosio.names (where bidname revenues go)  [system.newaccount] 
+.
+ done
+Create account eosio.stake (where delegated stakes go)  [system.newaccount] 
+.
+ done
+Create account eosio.saving (unallocated inflation)  [system.newaccount] 
+.
+ done
+Create account eosio.bpay (fund per-block bucket)  [system.newaccount] 
+.
+ done
+Create account eosio.vpay (fund per-vote bucket)  [system.newaccount] 
+.
+ done
+Setting privileged account for eosio.msig  [system.setpriv] 
+.
+ done
+Setting eosio.msig code for account eosio.msig  [system.setcode] 
+.
+ done
+Setting eosio.token code for account eosio.token  [system.setcode] 
+.
+ done
+Creating the EOS currency symbol  [token.create] 
+.
+ done
+Issuing initial EOS monetary base  [token.issue] 
+.
+ done
+Create account battlefield1  [system.newaccount] 
+.
+ done
+Create account battlefield3  [system.newaccount] 
+.
+ done
+Create account notified1  [system.newaccount] 
+.
+ done
+Create account notified2  [system.newaccount] 
+.
+ done
+Create account notified3  [system.newaccount] 
+.
+ done
+Create account notified4  [system.newaccount] 
+.
+ done
+Create account notified5  [system.newaccount] 
+.
+ done
+Setting battlefield (without `onerorr` handler) code for account battlefield1  [system.setcode] 
+.
+ done
+Setting battlefield (with `onerror` handler) code for account battlefield3  [system.setcode] 
+.
+ done
+Setting battlefield code for account notified2  [system.setcode] 
+.
+ done
+Create zzzzzzzzzzzz account  [system.newaccount] 
+.
+ done
+Replacing eosio account from eosio.bios contract to eosio.system  [system.setcode] 
+.
+ done
+Disabling authorization for system accounts, pointing `eosio` to the `eosio.prods` account.  [system.resign_accounts] 
+.
+ done
+Waiting 2 seconds for transactions to flush to blocks
+Pinging target node at "http://localhost:9898"...
+ touchdown!
+Pulling blocks from chain until we gathered all actions to validate:
+.
+Receiving block height=1 producer= transactions=0
+.
+Receiving block height=2 producer=eosio transactions=0
+.
+Receiving block height=3 producer=eosio transactions=26
+- Validating action 1/54 [eosio::setcode]
+ valid.
+- Validating action 2/54 [eosio::setabi]
+ valid.
+- Validating action 3/54 [eosio::newaccount]
+ valid.
+- Validating action 4/54 [eosio::newaccount]
+ valid.
+- Validating action 5/54 [eosio::newaccount]
+ valid.
+- Validating action 6/54 [eosio::newaccount]
+ valid.
+- Validating action 7/54 [eosio::newaccount]
+ valid.
+- Validating action 8/54 [eosio::newaccount]
+ valid.
+- Validating action 9/54 [eosio::newaccount]
+ valid.
+- Validating action 10/54 [eosio::newaccount]
+ valid.
+- Validating action 11/54 [eosio::newaccount]
+ valid.
+- Validating action 12/54 [eosio::newaccount]
+ valid.
+- Validating action 13/54 [eosio::newaccount]
+ valid.
+- Validating action 14/54 [eosio::setpriv]
+ valid.
+- Validating action 15/54 [eosio::setcode]
+ valid.
+- Validating action 16/54 [eosio::setabi]
+ valid.
+- Validating action 17/54 [eosio::setcode]
+ valid.
+- Validating action 18/54 [eosio::setabi]
+ valid.
+- Validating action 19/54 [eosio.token::create]
+ valid.
+- Validating action 20/54 [eosio.token::issue]
+ valid.
+- Validating action 21/54 [eosio::newaccount]
+ valid.
+- Validating action 22/54 [eosio::newaccount]
+ valid.
+- Validating action 23/54 [eosio::newaccount]
+ valid.
+- Validating action 24/54 [eosio::newaccount]
+ valid.
+- Validating action 25/54 [eosio::newaccount]
+ valid.
+- Validating action 26/54 [eosio::newaccount]
+ valid.
+- Validating action 27/54 [eosio::newaccount]
+ valid.
+- Validating action 28/54 [eosio::setcode]
+ valid.
+- Validating action 29/54 [eosio::setabi]
+ valid.
+- Validating action 30/54 [eosio::setcode]
+ valid.
+- Validating action 31/54 [eosio::setabi]
+ valid.
+.
+Receiving block height=4 producer=eosio transactions=4
+- Validating action 32/54 [eosio::setcode]
+ valid.
+- Validating action 33/54 [eosio::setabi]
+ valid.
+- Validating action 34/54 [eosio::newaccount]
+ valid.
+- Validating action 35/54 [eosio::setcode]
+ valid.
+- Validating action 36/54 [eosio::setabi]
+ valid.
+- Validating action 37/54 [eosio::updateauth]
+ valid.
+- Validating action 38/54 [eosio::updateauth]
+ valid.
+- Validating action 39/54 [eosio::updateauth]
+ valid.
+- Validating action 40/54 [eosio::updateauth]
+ valid.
+- Validating action 41/54 [eosio::updateauth]
+ valid.
+- Validating action 42/54 [eosio::updateauth]
+ valid.
+- Validating action 43/54 [eosio::updateauth]
+ valid.
+- Validating action 44/54 [eosio::updateauth]
+ valid.
+- Validating action 45/54 [eosio::updateauth]
+ valid.
+- Validating action 46/54 [eosio::updateauth]
+ valid.
+- Validating action 47/54 [eosio::updateauth]
+ valid.
+- Validating action 48/54 [eosio::updateauth]
+ valid.
+- Validating action 49/54 [eosio::updateauth]
+ valid.
+- Validating action 50/54 [eosio::updateauth]
+ valid.
+- Validating action 51/54 [eosio::updateauth]
+ valid.
+- Validating action 52/54 [eosio::updateauth]
+ valid.
+- Validating action 53/54 [eosio::updateauth]
+ valid.
+- Validating action 54/54 [eosio::updateauth]
+ valid.
+
+All good! Chain validation succeeded!
+
